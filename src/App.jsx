@@ -22,15 +22,20 @@ const App = () => {
   }, []);
 
   return (
-    <div className="App">
+    <div className="app">
       <h1>MovieLand</h1>
+
       <div className="search">
         <input
-          placeholder="Search for movies"
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
+          placeholder="Search for movies"
         />
-        <img src={SearchIcon} alt="search" onClick={() => searchMovies(searchTerm)} />
+        <img
+          src={SearchIcon}
+          alt="search"
+          onClick={() => searchMovies(searchTerm)}
+        />
       </div>
 
       {movies?.length > 0 ? (
@@ -47,5 +52,6 @@ const App = () => {
     </div>
   );
 };
+
 
 export default App;
