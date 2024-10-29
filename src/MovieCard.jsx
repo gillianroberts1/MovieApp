@@ -3,6 +3,12 @@
 const MovieCard = ({ movie: { imdbID, Year, Poster, Title, Type } }) => {
   return (
     <div className="movie">
+    <a
+      href={`https://www.imdb.com/title/${imdbID}/`}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="movie"
+    >
       <div>
         <p>{Year}</p>
       </div>
@@ -21,6 +27,7 @@ const MovieCard = ({ movie: { imdbID, Year, Poster, Title, Type } }) => {
         <span>{Type}</span>
         <h3>{Title}</h3>
       </div>
+      </a>
     </div>
   );
 };
