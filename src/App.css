@@ -72,6 +72,16 @@ h1 {
   width: 35px;
   height: 35px;
   cursor: pointer;
+  padding-left: 10px;
+}
+
+.app select {
+  border-radius: 10px;
+  height: 25px;
+  width: 80px;
+  background-color: rgba(249, 211, 180, 1);
+  font-family: var(--font-raleway);
+  text-align: center;
 }
 
 /* .search button {
